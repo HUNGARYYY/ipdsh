@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Quickly made with brevity by @bolg 
+#    Quickly made with brevity by @phzpw 
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by

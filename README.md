@@ -18,4 +18,8 @@ The script will log every IP address dropped to the file "dropped.dat":
     5.8.175.255
     5.44.15.255
     31.29.255.255
-  
+## TODO
+
+I'm wanting to integrate a friend's iptables save+restart script soon, as an option before cosing ipdsh. 
+This will make restarting iptables after dropping ip's more seamless, as the entire point of this service
+is to make using iptables much quicker and human friendly.   

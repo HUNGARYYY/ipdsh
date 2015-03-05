@@ -1,6 +1,5 @@
 ## ipdsh
-Quickly drop an offensive ip address using iptables. 
-
+Quickly drop an offensive ip address using iptables. An alternative to using autokey for the many iptables flags.
 ## Example
 
    >$ sh ipdrop.sh 

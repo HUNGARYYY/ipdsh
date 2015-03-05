@@ -21,6 +21,7 @@ echo Enter an Ip Address to drop:
 #Create var
 read ipaddress
 
+echo ""
 echo "$(tput setaf 1)***WARNING***$(tput sgr0)" This will block an IP address. Hit CTRL + C now to cancel.
 sleep 4
 echo Running..

@@ -1,5 +1,5 @@
 ## ipdsh
-Drop an offensive ip address using iptables
+Quickly drop an offensive ip address using iptables. 
 
 ## Example
 

@@ -21,6 +21,11 @@ echo Enter an Ip Address to drop:
 #Create var
 read ipaddress
 
+echo **WARNING** this will block an IP address. To cancel, hit CTRL + C NOW!
+sleep 6
+echo Running..
+sleep 4
+
 #Log IP address to dropped.dat
 echo $ipaddress >> dropped.dat
 

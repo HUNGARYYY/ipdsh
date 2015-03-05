@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#    Quickly made with brevity by @phzpw 
+#    Quickly made with brevity by @phzpw
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -26,10 +26,11 @@ sleep 4
 echo Running..
 sleep 2
 
-#Log IP address to dropped.dat
-echo $ipaddress >> dropped.dat
+#Log IP address to dropped.log
+echo $ipaddress >> dropped.log
 
 #Drop IP address
 iptables -A INPUT -s $ipaddress -j DROP
- 
-echo "The ip Address $ipaddress was sucessfuly blocked"
+
+echo "The ip Address $ipaddress was sucessfuly blocked and added to dropped.log"
+

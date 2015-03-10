@@ -16,24 +16,40 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-echo Enter an Ip Address to drop:
-
-#Create var
-read ipaddress
-
+#Greetings, here is a warning.
 echo ""
-echo "$(tput setaf 1)***WARNING***$(tput sgr0)" This will block an IP address. Hit CTRL + C now to cancel.
+echo "$(tput setaf 1)***WARNING***$(tput sgr0)" This script will block an IP address using iptables. Hit CTRL + C now to cancel this operation.
 echo ""
 sleep 4
-echo Running..
+
+echo "Enter an IP Address to drop:"
+
+#Create var and assign the ip address
+read ipaddress
+echo ""
+echo "Running.."
 echo ""
 sleep 2
 
-#Log IP address to dropped.log
+#LOG DOWN FOR WHAT
 echo $ipaddress >> dropped.log
 
 #Drop IP address
 iptables -A INPUT -s $ipaddress -j DROP
 
-echo "The ip Address $ipaddress was sucessfuly blocked and added to dropped.log"
+echo "The ip Address $ipaddress was sucessfuly blocked and added to "$(tput setaf 1)"dropped.log"$(tput sgr0)""
+echo ""
 
+#Sanity check
+read -p "Would you like to view the dropped.log file? <y/N> " prompt
+if [[ $prompt == "y" ||
+$prompt == "Y" || $prompt == "Y" || $prompt == "Yes" ]]
+then
+cat dropped.log
+echo ""
+else
+        echo ""
+        exit 0
+fi
+echo ""
+echo ""

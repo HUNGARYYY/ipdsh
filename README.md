@@ -34,3 +34,6 @@ is to make using iptables much quicker and human friendly.
 
 I'm also working on a way to blacklist multiple ip addresses or ranges that is concurrent with the rest of the script.
 
+
+Follow my blog at http://phzpw.github.io for more casual updates and thoughts regarding this project. 
+

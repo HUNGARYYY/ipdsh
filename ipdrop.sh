@@ -40,7 +40,7 @@ iptables -A INPUT -s $ipaddress -j DROP
 echo "The ip Address $ipaddress was sucessfuly blocked and added to "$(tput setaf 1)"dropped.log"$(tput sgr0)""
 echo ""
 
-#Sanity check
+#Sanity checking
 read -p "Would you like to view the dropped.log file? <y/N> " prompt
 if [[ $prompt == "y" ||
 $prompt == "Y" || $prompt == "Y" || $prompt == "Yes" ]]
